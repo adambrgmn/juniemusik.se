@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
@@ -163,7 +163,7 @@ q:before {
 }
 
 body {
-  background: #b6c9bb;
+  background: #627C85;
 }
 
 .container {
@@ -173,20 +173,23 @@ body {
   flex-flow: column nowrap;
   width: 100vw;
   min-height: 100vh;
+  padding: 1rem;
   overflow: hidden;
 }
 
 .title {
-  font-family: 'EB Garamond', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #697268;
+  color: #ffffff;
+  z-index: 2;
 }
 
 .link-list {
-  margin-top: 1rem;
+  margin-top: 0rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -202,12 +205,19 @@ body {
 }
 
 .link {
-  color: #697268;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+.img-container {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: -2rem;
+  z-index: 1;
 }
 
 @media (min-width: 576px) {
@@ -222,6 +232,7 @@ body {
   }
 
   .link-list-item + .link-list-item {
-    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 }
